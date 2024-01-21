@@ -1,0 +1,39 @@
+body {
+  background-color: grey;
+}
+.category_card {
+  background-color: white;
+  width: 21%;
+  height: fit-content;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cat_name {
+  font-size: 1.3rem;
+  padding: 10px 0px;
+  margin-left: 1rem;
+}
+
+.sub_cat {
+  display: grid;
+  margin-left: 1rem;
+  grid-template-columns: 50% 50%;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands img {
+  width: 90%;
+  border: 0.1px solid lightgrey;
+}
+
+.explore {
+  padding: 1rem;
+}
+
+.explore a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 0.9rem;
+}

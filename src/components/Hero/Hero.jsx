@@ -1,24 +1,37 @@
+import Slider from "react-slick";
 import "./Hero.css";
-function Hero() {
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const Hero = () => {
+  const images = [
+    { id: 1, src: "./src/assets/hero_banner1.png", alt: "Image 1" },
+    { id: 2, src: "./src/assets/hero_banner1.png", alt: "Image 2" },
+    { id: 3, src: "./src/assets/hero_banner1.png", alt: "Image 3" },
+  ];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
     <div className="heroElement">
-      <div className="heroImg">
-        <img src="src/assets/hero_banner1.png" alt="Hero Image" />
-      </div>
-      <div className="imgContent">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          omnis labore ratione cumque eaque excepturi provident saepe nisi
-          aperiam aspernatur voluptate, qui, iusto repellat dolorum assumenda,
-          amet debitis unde inventore. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptatum porro voluptas veniam quaerat, nemo sed
-          voluptatibus ad excepturi vero recusandae ducimus exercitationem
-          necessitatibus architecto doloremque, non laborum delectus modi
-          adipisci.
-        </p>
-      </div>
+      <Slider {...settings} className="sliderz">
+        {images.map((image) => (
+          <div key={image.id} className="heroImg">
+            <img src={image.src} alt={image.alt} />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
-}
+};
 
 export default Hero;
