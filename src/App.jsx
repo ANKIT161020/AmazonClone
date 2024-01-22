@@ -1,14 +1,14 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import "./App.css";
-import CategoryCard from "./components/CategoryCard/CategoryCard";
+import CategoryPage from "./components/Pages/Category_Page/CategoryPage";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <CategoryCard />
+      <CategoryPage />
       <div>This is main body</div>
     </>
   );

@@ -1,0 +1,6 @@
+.CategoryCards {
+  display: grid;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  gap: 20px;
+  margin-left: 3.5vw;
+}

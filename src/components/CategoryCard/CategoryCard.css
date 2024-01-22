@@ -1,15 +1,13 @@
-body {
-  background-color: grey;
-}
 .category_card {
   background-color: white;
-  width: 21%;
+  width: 22vw;
   height: fit-content;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .cat_name {
   font-size: 1.3rem;
+  font-weight: bolder;
   padding: 10px 0px;
   margin-left: 1rem;
 }
@@ -21,6 +19,10 @@ body {
   row-gap: 1rem;
   justify-content: center;
   align-items: center;
+}
+.brands {
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .brands img {
