@@ -1,5 +1,5 @@
 .item_card {
-  width: 20vw;
+  width: 17vw;
   height: 60vh;
   border: 0.5px solid grey;
   background-color: whitesmoke;
@@ -26,15 +26,18 @@
 .item_content {
   height: 45%;
   width: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .item_name {
   border: 2px solid red;
-  width: 100%;
-  height: fit-content;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  white-space: pre-wrap;
+  -webkit-line-clamp: 2;
   text-overflow: ellipsis;
-  font-weight: bold;
+  /* margin: 0 8px; */
+  font-size: large;
+  letter-spacing: -1;
+  font-weight: 300;
 }

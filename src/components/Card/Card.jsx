@@ -8,7 +8,8 @@ export default function Card() {
       </div>
       <div className="item_content">
         <div className="item_name">
-          Adidas Shoesashjdgasdhauisdfhauisdfhajksdhfuiawerfhasjkdfhawdg
+          ZEBRONICS Juke BAR 9102 PRO 240W Output Dolby Soundbar with Bluetooth
+          5.0, HDMI
         </div>
         <div className="ratings">5stars</div>
         <div className="item_price">5000Rs</div>
